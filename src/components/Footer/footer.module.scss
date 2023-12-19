@@ -1,0 +1,75 @@
+
+@import './../../Styles/globalVars.module.scss';
+
+.footSection {
+  background-color: $blueDark;
+  color: $white;
+  text-transform: uppercase;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__logoList {
+      display: flex;
+      gap: 20px;
+      // justify-content: ;
+
+      &__el {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+
+        &__link {
+          text-decoration: none;
+          color: inherit;
+        }
+        &__link:hover {
+          text-decoration: none;
+          color: $redLight;
+        }
+      }
+    }
+    &__mediaList {
+      display: flex;
+      gap: 20px;
+
+      &__el {
+
+      }
+
+    }
+  }
+}
+
+.logo {
+  cursor: pointer;
+    path {
+      fill: $white; 
+    
+    }
+    margin-right: 30px;
+}
+.icon {
+
+    path {
+        fill: $white; 
+        
+      }
+}
+
+.icon:hover {
+    cursor: pointer;
+    path {
+        fill: $redLight; 
+        
+      }
+}
+
+.listTest:hover {
+  color: red;
+
+}
+
+

@@ -1,0 +1,79 @@
+@import './../../Styles/globalVars.module.scss';
+
+
+.headSection {
+    // height: 80px;
+
+
+  &__nav {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__logo {
+        background-color: brown;
+    }
+
+    &__buttons {
+        // background-color: aqua;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        text-transform: uppercase;
+        text-decoration: none;
+        
+        
+
+
+        &__link {
+            text-decoration: none;
+            color: $gray;
+            font-weight: 500;
+
+            &:hover {
+                color: $redLight;
+            }
+            
+
+
+            
+        }
+
+        &__btn {
+            text-transform: uppercase;
+            text-decoration: none;
+
+            padding: 10px 30px;
+            border-radius: 6px;
+            border: 1px solid $redLight;
+
+
+            background-color: $redLight;
+
+
+            color: $white;
+            font-family: $rubikFont;
+            font-weight: 500;
+            // font-size: ;
+            // font-size: 80px;
+
+            &:hover {
+                color: $redLight;
+                background-color: $white;
+                // border: 1px solid $redLight;
+
+            }
+
+
+        }
+    }
+
+    
+
+  }
+}

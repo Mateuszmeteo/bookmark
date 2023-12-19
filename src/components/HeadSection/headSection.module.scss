@@ -1,0 +1,39 @@
+
+@import './../../Styles/globalVars.module.scss';
+
+.headSection {
+    margin-top: 80px;
+    &__list {
+        display: flex;
+
+        &__el {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // position: relative;
+        }
+        &__back {
+
+            position: relative;
+        }
+        &__back::after {
+        content: '';
+        position: absolute;
+        width: 580px;
+        height: 340px;
+
+        z-index: -1;
+        bottom: -20px;      
+        right: $margPseudo;
+        background-color: $blueLight;
+
+        border-top-left-radius: 25em;
+        border-bottom-left-radius: 25em;
+    }
+    }
+
+
+    // &__img {
+    // }
+    
+}

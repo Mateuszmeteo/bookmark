@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "icon": "logo-chrome.svg",
+        "title": "Add to Chrome",
+        "sub": "Minimum version 62",
+        "btnlink": ""
+    },
+    {
+        "id": "2",
+        "icon": "logo-firefox.svg",
+        "title": "Add to Firefox",
+        "sub": "Minimum version 55",
+        "btnlink": ""
+    },
+    {
+        "id": "3",
+        "icon": "logo-opera.svg",
+        "title": "Add to Opera",
+        "sub": "Minimum version 46",
+        "btnlink": ""
+    }
+]

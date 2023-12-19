@@ -1,0 +1,51 @@
+
+///////////////// COLORS /////////////////
+
+$white: #fff;
+
+$blueLight: hsl(231, 69%, 60%);
+$redLight: hsl(0, 94%, 66%);
+
+$gray: hsl(229, 8%, 60%);
+$blueDark :hsl(229, 31%, 21%);
+
+
+
+
+////////////////////////////////////////////////////
+/// /////// MIXIN MEDIA ///////////////
+
+// Mobile: 375px
+// - Desktop: 1440px
+
+
+$mobile: 375px;
+// $mobileMax: 480px;
+// $tablet: 768px;
+$desktop: 1440px;
+
+// @mixin tablet {
+//   @media screen and (min-width: #{$tablet}) {
+//     @content;
+//   }
+// }
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+////////////////////////////////////////////
+/// ///// FONTS ///////////////
+
+$rubikFont: 'Rubik', sans-serif;
+
+
+//////////////////////////
+/// Margin pseudoElements
+
+$margPseudo: -120px;
+  
+ 
+

@@ -1,0 +1,40 @@
+.icon {
+
+
+    path {
+        // fill: #413131; 
+        
+      }
+}
+
+.icon:hover {
+    cursor: pointer;
+    path {
+        // fill: #500707; 
+        
+      }
+}
+
+.iconClose {
+
+    transform: rotate(180deg);
+    path {
+        stroke: #413131; 
+        
+      }
+
+
+}
+
+
+.questionsBox {
+  // border-top: solid 1px black;
+  border-bottom: solid 1px black;
+
+  // width: 70%;
+}
+
+.questionsBox:nth-child(1) {
+  border-top: solid 1px black;
+
+}

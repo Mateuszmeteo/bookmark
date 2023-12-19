@@ -1,0 +1,21 @@
+@import './Styles/globalVars.module.scss';
+
+body {
+    // font-family: 'Rubik', sans-serif;
+    font-family: $rubikFont;
+    font-size: 18px;
+
+    margin: 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    h2 {
+      margin: 0;
+    }
+  
+  }
+  
+  
