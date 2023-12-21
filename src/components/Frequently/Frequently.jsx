@@ -2,15 +2,11 @@ import styles from './frequently.module.scss'
 
 import Container from "../Container/Container"
 
-
 import freqFile from './../../data/frequently.json'
 import Questions from "../Questions/Questions"
 
 
 const Frequently = () => {
-
-    
-
 
     return (
         <section>
@@ -31,10 +27,8 @@ const Frequently = () => {
                         <li><button className={styles.frequently__list__btn}>More info</button></li>
                     </ul>
                 </div>
-                
             </Container>
         </section>
-
     )
 }
 

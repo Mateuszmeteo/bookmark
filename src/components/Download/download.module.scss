@@ -30,11 +30,8 @@
 
             @include desktop {
                 height: 500px;
-                // margin-top: 100px;
-                // background-color: darkgrey;
             }
             &__list {
-                // background-color: rgb(124, 113, 99);
 
                 @include desktop {
 
@@ -44,12 +41,6 @@
                     gap: 40px;
                 }
                
-                
-                
-               
-                
-                
-                
                 &__el {
                     &__one {
                         margin-bottom: 40px;
@@ -62,9 +53,7 @@
                     }
                     @include desktop {
                     &__one {
-                        
                         // margin-top: 20px;
-                        
                     }
                     &__two {
                         margin-top: 40px;
@@ -75,34 +64,14 @@
 
                     }}
                     
-                    
-                    // box-shadow:  12px 2px 12px $blueLight;
-                    
-                    // display: flex;
-                    // gap: 40px;
-                    // align-items: center;
-                    // justify-content: center;
 
                     &__cards {
-    
                         // background-color: aquamarine;
-                                        
                         width: 280px;
-                        // height: 400px;
-                        // border: 1px solid black;
                         border-radius: 15px;
-                        box-shadow: -1px 6px 6px $blueLightShadow,
-                                     1px 6px 6px $blueLightShadow;
-                    
-                    
-                    
+                        box-shadow: -1px 6px 6px $blueLightShadow, 1px 6px 6px $blueLightShadow;
                         text-align: center;  
-                        // display: flex;
-                        // flex-direction: column;
-                        
-                                        
-                                        
-                    
+              
                             &__img {
                                 margin-top: 40px;
                             }
@@ -135,20 +104,11 @@
                                     color: $blueLight;
                                 }
                             }
-                    
                     }
-                    
-                    
-                   
-                    
-                    
-}}}}}
+                }
+            }
+        }
+    }
+}
 
-
-
-
-
-
-
-                    
-                
+    

@@ -17,12 +17,11 @@ const MobileMenu = ( {close} ) => {
                     <li><ReactSVG
                                 src={logo}
                                 beforeInjection={(svg) => {
-                                svg.classList.add(styles.logo);
-                                }}
+                                svg.classList.add(styles.logo)}}
                                 alt="logo"
                             />
                     </li>
-                    <li><button className={styles.mobile__box__head__btnClose} onClick={close}><img  src={btnClose}/></button></li>
+                    <li><button className={styles.mobile__box__head__btnClose} onClick={close}><img src={btnClose} alt='close'/></button></li>
                 </ul>
                 <ul className={styles.mobile__box__links}>
                     <li className={styles.mobile__box__links__el}>
@@ -40,8 +39,7 @@ const MobileMenu = ( {close} ) => {
                             <ReactSVG
                                 src={fb}
                                 beforeInjection={(svg) => {
-                                svg.classList.add(styles.icon);
-                                }}
+                                svg.classList.add(styles.icon)}}
                                 alt="Facebook"
                             />
                     </li>
@@ -49,17 +47,13 @@ const MobileMenu = ( {close} ) => {
                             <ReactSVG
                                 src={tw}
                                 beforeInjection={(svg) => {
-                                svg.classList.add(styles.icon);
-                                }}
+                                svg.classList.add(styles.icon)}}
                                 alt="Twitter"
                             />
                     </li>
                 </ul>
-                
             </div>
-            
         </div>
     )
-
 }
 export default MobileMenu

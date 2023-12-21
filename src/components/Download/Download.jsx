@@ -1,5 +1,5 @@
 import Container from "../Container/Container"
-import downloadFile from './../../data/downloads.json'
+import styles from './download.module.scss'
 
 import iconGoogle from './../../images/logo-chrome.svg'
 import iconFirefox from './../../images/logo-firefox.svg'
@@ -7,8 +7,6 @@ import iconOpera from './../../images/logo-opera.svg'
 import dots from './../../images/bg-dots.svg'
 
 
-import styles from './download.module.scss'
-// import DownloadCard from "./DownloadCard"
 const Download = () => {
     return (
         <section className={styles.downloadSection}>

@@ -18,7 +18,6 @@ const Home = () => {
             <Frequently />
             <StayUp />
         </main>
-
     )
 }
 

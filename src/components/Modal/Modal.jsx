@@ -24,15 +24,13 @@ const ModalPop = ({ isOpen, onRequestClose }) => {
                 <ReactSVG
                     src={iconClose}
                     beforeInjection={(svg) => {
-                    svg.classList.add(styles.modalButton__close);
-                        }}
+                    svg.classList.add(styles.modalButton__close)}}
                     alt="close"
                 />
             </button>
             <LinksDesktop />
             <Easy />
         </div>
-      
     </Modal>
   );
 };

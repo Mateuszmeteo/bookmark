@@ -48,7 +48,7 @@ const StayUp = () => {
 
     return (
         <section className={styles.stayUpSection}>
-            <Container>
+          <Container>
             <div className={styles.containerStay}>
                 <ul className={styles.stayUpSection__box}>
                     <li><p className={styles.stayUpSection__box__paraf}>{count.toLocaleString('en-US')}+ already joined</p></li>
@@ -72,7 +72,7 @@ const StayUp = () => {
                     </li>
                 </ul>
             </div>
-            </Container>
+          </Container>
         </section>
     )
 }

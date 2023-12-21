@@ -57,19 +57,13 @@
             font-size: 14px;
             letter-spacing: 1px;
             background-color: $blueLight;
-            box-shadow: -1px 6px 6px $blueLightShadow,
-                        1px 6px 6px $blueLightShadow;
+            box-shadow: -1px 6px 6px $blueLightShadow, 1px 6px 6px $blueLightShadow;
                     
             &:hover {
                 background-color: $white;
                 color: $blueLight;
             }
         }
-
     }
-    
-
-
-    
 }
 

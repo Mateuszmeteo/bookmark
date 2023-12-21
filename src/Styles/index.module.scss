@@ -1,4 +1,4 @@
-@import './Styles/globalVars.module.scss';
+@import './globalVars.module.scss';
 
 body {
     // font-family: 'Rubik', sans-serif;
@@ -19,9 +19,7 @@ body {
       @include desktop {
         font-size: 30px;
       }
-      
     }
-  
   }
   
   

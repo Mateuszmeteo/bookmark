@@ -23,16 +23,9 @@ $blueDarkBack :rgba(38, 44, 69, 0.95);
 
 
 $mobile: 375px;
-// $mobileMax: 480px;
-// $tablet: 768px;
 $desktopBelow: 1439px;
 $desktop: 1440px;
 
-// @mixin tablet {
-//   @media screen and (min-width: #{$tablet}) {
-//     @content;
-//   }
-// }
 @mixin desktopBelow {
   @media screen and (max-width: #{$desktopBelow}) {
     @content;

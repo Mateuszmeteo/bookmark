@@ -24,10 +24,8 @@ const HeadSection = () => {
                         <img className={styles.headSection__list__back__img} src={hero} alt="illustration-hero"/>
                     </li>
                 </ul>
-
             </Container>
         </section>
-
     )
 }
 

@@ -7,7 +7,7 @@ const Simple = () => {
         <div className={styles.outlet}>
             <ul className={styles.outlet__list}>
                 <li className={styles.outlet__list__backSimple}>
-                    <img className={styles.outlet__list__logo} src={logo}/>
+                    <img className={styles.outlet__list__logo} src={logo} alt='logo'/>
                 </li>
                 <li className={styles.outlet__list__about}>
                     <h2 className={styles.outlet__list__about__title}>Bookmark in one click</h2>

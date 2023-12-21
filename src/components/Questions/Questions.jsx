@@ -16,7 +16,6 @@ const Questions = ( {title, sub}) => {
         setDescription(false)
     }
 
-
     return (
         <div className={styles.questionsBox}>
             <div className={styles.questionsBox__title}>
@@ -26,8 +25,7 @@ const Questions = ( {title, sub}) => {
                                 <ReactSVG
                                 src={iconDown}
                                 beforeInjection={(svg) => {
-                                svg.classList.add(styles.icon);
-                                }}
+                                svg.classList.add(styles.icon)}}
                                 alt="down"
                                 />
                             </button>)}
@@ -36,8 +34,7 @@ const Questions = ( {title, sub}) => {
                                 <ReactSVG
                                 src={iconDown}
                                 beforeInjection={(svg) => {
-                                svg.classList.add(styles.iconClose);
-                                }}
+                                svg.classList.add(styles.iconClose)}}
                                 alt="up"
                                 />
                             </button>) }

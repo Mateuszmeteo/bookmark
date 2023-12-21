@@ -2,6 +2,7 @@
 
 
 .mobile {
+    // background-color: $blueDarkBack;
     width: 100vw;
     height: 100vh;
 
@@ -11,7 +12,6 @@
     left: 0;
 
     z-index: 5;
-    // background-color: $blueDarkBack;
     background: linear-gradient(
         to bottom,
         rgba(38, 44, 69, 1),
@@ -58,29 +58,23 @@
             &__el {
                 // background-color: brown;
                 border-top: 1px solid $gray;
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
                 padding-top: 25px;
+
                 &__link {
                     text-decoration: none;
                     color: $white;
                     &:hover {
                         color: $redLight;
                     }
-
                 }
                
             }
             &__listBtn {
                 // background-color: chartreuse;
                 border-top: 1px solid $gray;
-                // padding-top: 40px;
-                // width: 100%;
                 
                 &__btnLink {
                     
-
                     &__el {
                         text-transform: uppercase;
                         margin-top: 25px;
@@ -103,23 +97,8 @@
                         }
 
                     }
-                    // background-color: aqua;
-                    // text-decoration: none;
-                    // border: 1px solid $white;
-                    // color: $white;
-
-
-                    // // font-size: 8px;
-
-                    // margin-top: 50px;
-
-                    // width: 200px;
-                    // padding: 15px, ;
-
-                    // padding-top: 20px;
                 }
             }
-
         }
 
         &__media {
@@ -134,33 +113,28 @@
 
 .logo {
     cursor: pointer;
-      path {
+    path {
         &:nth-child(1) {
             fill: $white;
         }
         &:nth-child(2) {
             fill: $blueDark;
         }
-        // fill: red;      
-      }
-      circle {
+    }
+    circle {
         fill: $white;
-      }
-     
-    //   margin-right: 30px;
-  }
-  .icon {
+    }
+}
+
+.icon {
+    path {
+        fill: $white; 
+    }
+}
   
-      path {
-          fill: $white; 
-          
-        }
-  }
-  
-  .icon:hover {
-      cursor: pointer;
-      path {
+.icon:hover {
+    cursor: pointer;
+    path {
           fill: $redLight; 
-          
-        }
-  }
+    }
+}

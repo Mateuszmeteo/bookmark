@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import styled from 'styled-components';
 
 import styles from './features.module.scss'
@@ -19,14 +19,8 @@ const LinksDesktop = () => {
         justify-content: center;
 
 
-        
-
-
-
         &.active {
-            color: hsl(229, 31%, 21%);
-            /* border-bottom: 3px solid hsl(0, 94%, 66%); */
-            
+            color: hsl(229, 31%, 21%);            
             
         }
         &.active::after {

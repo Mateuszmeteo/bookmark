@@ -22,8 +22,7 @@ const Footer = () => {
                             <ReactSVG
                                 src={logo}
                                 beforeInjection={(svg) => {
-                                svg.classList.add(styles.logo);
-                                }}
+                                svg.classList.add(styles.logo)}}
                                 alt="logo"
                             /></li>
                         <li className={styles.footSection__box__logoList__el}>
@@ -41,16 +40,14 @@ const Footer = () => {
                             <ReactSVG
                                 src={fb}
                                 beforeInjection={(svg) => {
-                                svg.classList.add(styles.icon);
-                                }}
+                                svg.classList.add(styles.icon)}}
                                 alt="Facebook"
                             />
                         </li>
                         <li className={styles.footSection__box__mediaList__el}><ReactSVG
                                 src={tw}
                                 beforeInjection={(svg) => {
-                                svg.classList.add(styles.icon);
-                                }}
+                                svg.classList.add(styles.icon)}}
                                 alt="Twitter"
                             />
                         </li>

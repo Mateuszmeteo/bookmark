@@ -1,4 +1,6 @@
-
+//// Features 
+//// outlets: 
+///             | Simple | Speedy | Easy |
 
 
 @import './../../Styles/globalVars.module.scss';
@@ -18,10 +20,7 @@
 
     &__head {
         // background-color: cadetblue;
-
         margin-bottom: 40px;
-
-
         text-align: center;
 
         @include desktop {
@@ -47,11 +46,9 @@
         margin-bottom: 80px;
         @include desktop {
             margin-top: 20px;
-            // margin-bottom: 80px;
         }
         &__box {
             // background-color: crimson;
-
             width: 320px;
             text-align: center;
 
@@ -66,21 +63,17 @@
                 border-top: 1px solid $gray;
                 @include desktop {
                     border-top: none;
-
-
                 }
 
             }
-
-
 
             &__el {
                 // background-color: bisque;
                 padding-top: 15px;
                 padding-bottom: 15px;
                 
-
                 border-bottom: 1px solid $gray;
+
                 @include desktop {
                     border-bottom: none;
                     display: flex;
@@ -95,9 +88,6 @@
   }
 }
 
-
-
-
 //////////////////////////////////////////
 
 .outlet {
@@ -106,7 +96,6 @@
         @include desktop {
             display: grid;
             grid-template-columns: 50% 50%;
-
         }
 
         &__logo {
@@ -141,7 +130,6 @@
                 }
             }
         }
-        
 
         /////////////////////
         &__backSpeedy {
@@ -167,10 +155,8 @@
                     left: $margPseudo;
                     bottom: 0;     
                 }
-
             }
         }
-
 
         ///////////////////////
         &__backEasy {
@@ -196,11 +182,8 @@
                     bottom: -40px;      
                     left: $margPseudo;
                 }
-
-
             }
         }
-
 
 
         &__about {

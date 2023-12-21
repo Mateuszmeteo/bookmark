@@ -36,18 +36,14 @@ const Header = () => {
                         </li>
                         <li className={styles.mobile}>
                             <button className={styles.mobile__btn} onClick={open}>
-                                <img className={styles.mobile__btn__img} src={burger} />
+                                <img className={styles.mobile__btn__img} src={burger} alt='burger' />
                             </button>
                         </li>
                     </ul>
-                    
-                    
                 </nav>
-                
             </Container>
             {menu && <MobileMenu close={close} />}
         </header>
-
     )
 }
 

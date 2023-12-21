@@ -1,31 +1,21 @@
 @import './../../Styles/globalVars.module.scss';
 
-
 .icon {
   cursor: pointer;
-
 }
-
 
 .iconClose {
   cursor: pointer;
-
-    transform: rotate(180deg);
-    path {
-        stroke: $redLight; 
-        
-      }
-
-
+  transform: rotate(180deg);
+  path {
+      stroke: $redLight; 
+  }
 }
 
 
 .questionsBox {
-
-  // border-top: solid 1px black;
   border-bottom: solid 1px $gray;
 
-  // width: 70%;
   &__title {
     display: flex;
     justify-content: space-between;
@@ -36,7 +26,6 @@
       @include desktop {
         font-size: inherit;
       }
-      // font-weight: bold;
     }
 
     &__btn {
@@ -44,7 +33,6 @@
       background-color: $white;
       @include desktop {
         padding-right: 20px;
-
       }
     }
   }
@@ -61,8 +49,6 @@
 .questionsBox:nth-child(1) {
   margin-top: 30px;
   @include desktop {
-
     border-top: solid 1px $gray;
   }
-
 }

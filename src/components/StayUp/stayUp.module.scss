@@ -1,26 +1,13 @@
 @import './../../Styles/globalVars.module.scss';
 
 
-// @keyframes countDown {
-//     from {
-//       content: '35,000+ already joined';
-//     }
-  
-//     to {
-//       content: '0 already joined';
-//     }
-//   }
-
-
 .containerStay {
     // background-color: blue;
     display: flex;
     justify-content: center;
-    // width: 320px;
 }
 .stayUpSection {
     background-color: $blueLight;
-    // height: 300px;
     
 
     &__box {
@@ -34,7 +21,6 @@
         color: $white;
         @include desktop {
             width: 415px;
-
         }
 
         &__paraf {
@@ -42,11 +28,6 @@
             font-size: 14px;
             letter-spacing: 4px;
             font-weight: 500;
-            // &::before {
-            //     animation: countDown 20s linear;
-            //     content: '35,000+ already joined';
-            //     display: inline-block;
-            // }
         }
 
         &__head {
@@ -91,9 +72,7 @@
             }
 
             &::placeholder {
-                // padding-left: 20px;
                 color: $gray;
-                
             }
 
             &.error {
@@ -112,15 +91,15 @@
             
             height: 40px;
             width: 320px;
+
             @include desktop {
                 width: 110px;
-
             }
+
             &:hover {
                 background-color: $white;
                 color: $redLight;
             }
-
         }
 
         &__err {
@@ -132,7 +111,6 @@
             
             background-color: $redLight;
             color: $white;
-            // letter-spacing: 0.5px;
 
             margin-top: 40px;
             
@@ -142,7 +120,6 @@
 
             font-size: 10px;
 
-
             @include desktop {
                 margin-top: 65px;
 
@@ -150,23 +127,20 @@
                 width: 265px;
                 
                 font-size: 12px;
-
             }
 
             &::after {
                 content: url('./../../images/icon-error.svg');
                 position: absolute;
                 width: 10px;
-                // background-color: $redLight;
                 right: 25px;
                 bottom: 26px;
-                // z-index: 2;
+
                 @include desktop {
                     right: 20px;
                     bottom: 35px;
                 }
             }
-            
         }
     }
 }
