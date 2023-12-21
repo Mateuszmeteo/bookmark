@@ -1,25 +1,18 @@
+@import './../../Styles/globalVars.module.scss';
+
+
 .icon {
+  cursor: pointer;
 
-
-    path {
-        // fill: #413131; 
-        
-      }
 }
 
-.icon:hover {
-    cursor: pointer;
-    path {
-        // fill: #500707; 
-        
-      }
-}
 
 .iconClose {
+  cursor: pointer;
 
     transform: rotate(180deg);
     path {
-        stroke: #413131; 
+        stroke: $redLight; 
         
       }
 
@@ -28,13 +21,48 @@
 
 
 .questionsBox {
+
   // border-top: solid 1px black;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px $gray;
 
   // width: 70%;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    &__el {
+      font-size: 14px;
+
+      @include desktop {
+        font-size: inherit;
+      }
+      // font-weight: bold;
+    }
+
+    &__btn {
+      border: none;
+      background-color: $white;
+      @include desktop {
+        padding-right: 20px;
+
+      }
+    }
+  }
+  &__subTitle {
+    margin-bottom: 30px;
+    line-height: 2;
+    font-size: 14px;
+    @include desktop {
+      font-size: inherit;
+    }
+  }
 }
 
 .questionsBox:nth-child(1) {
-  border-top: solid 1px black;
+  margin-top: 30px;
+  @include desktop {
+
+    border-top: solid 1px $gray;
+  }
 
 }

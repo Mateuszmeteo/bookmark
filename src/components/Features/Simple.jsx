@@ -7,11 +7,11 @@ const Simple = () => {
         <div className={styles.outlet}>
             <ul className={styles.outlet__list}>
                 <li className={styles.outlet__list__backSimple}>
-                    <img src={logo}/>
+                    <img className={styles.outlet__list__logo} src={logo}/>
                 </li>
                 <li className={styles.outlet__list__about}>
                     <h2 className={styles.outlet__list__about__title}>Bookmark in one click</h2>
-                    <p className={styles.outlet__list__about__description}>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites</p>
+                    <p className={styles.outlet__list__about__description}>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
                     <button className={styles.outlet__list__about__btn}>More info</button>
                 </li>
             </ul>

@@ -1,6 +1,26 @@
 @import './../../Styles/globalVars.module.scss';
 
 
+.mobile {
+  @include desktop {
+    display: none;
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    &__img {
+
+    }
+  }
+}
+.desktop {
+  display: none;
+  @include desktop {
+    display: inline;
+  }
+}
+
 .headSection {
     // height: 80px;
 
@@ -15,7 +35,7 @@
 
 
     &__logo {
-        background-color: brown;
+        // background-color: brown;
     }
 
     &__buttons {

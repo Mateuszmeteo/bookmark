@@ -7,7 +7,7 @@ const Easy = () => {
         <div className={styles.outlet}>
             <ul className={styles.outlet__list}>
                 <li className={styles.outlet__list__backEasy}>
-                    <img src={logo}/>
+                    <img className={styles.outlet__list__logo} src={logo}/>
                 </li>
                 <li className={styles.outlet__list__about}>
                     <h2 className={styles.outlet__list__about__title}>Share your bookmarks</h2>

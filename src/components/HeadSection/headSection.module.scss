@@ -2,38 +2,148 @@
 @import './../../Styles/globalVars.module.scss';
 
 .headSection {
-    margin-top: 80px;
+    margin-top: 40px;
+    @include desktop {
+        margin-top: 80px;
+    }
     &__list {
         display: flex;
+        flex-direction: column-reverse;
+        
+
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
 
         &__el {
             display: flex;
             justify-content: center;
-            align-items: center;
-            // position: relative;
+            // align-items: center;
+            @include desktop {
+                margin-top: 20px;
+            }
+
+            &__box {
+
+                // background-color: cadetblue;
+
+
+                margin-top: 30px;
+                text-align: center;
+                line-height: 1.5;
+
+                @include desktop {
+                    text-align: left;
+                    width: 480px;
+
+                }
+
+
+                &__title {
+                    @include desktop {
+                        font-size: 36px;
+                        line-height: 1.2;
+                    }
+                }
+                &__description {
+                    color: $gray;
+                    font-size: 17px;
+                }
+                &__btns {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    @include desktop {
+                        justify-content: flex-start;
+                        gap: 20px;
+                    }
+
+                    &__btnChrome {
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 1px solid $blueLight;
+                    font-weight: bold;
+
+                    background-color: $blueLight;
+                    color: $white;
+                    &:hover {
+                        background-color: $white;
+                        color: $blueLight;
+                        box-shadow:-1px 6px 6px $blueLightShadow;
+                    }
+                    }
+                    &__btnFirefox {
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: none;
+                    font-weight: bold;
+
+                    background-color: $grayWhite;
+                    color: $blueDark;
+                    box-shadow: -1px 6px 6px $blueLightShadow;
+                    &:hover {
+                        box-shadow: -1px 6px 6px $blueLightShadow;
+                        border: 1px solid $blueDark;
+
+                    }
+                    }
+                }
+
+                
+                
+            }
         }
         &__back {
+            // background-color: cornflowerblue;
+            display: flex;
+            justify-content: flex-end;
+            // align-items: flex-end;
 
             position: relative;
+            
+            &__img {
+                @include desktopBelow {
+                    width: 340px;
+                }
+
+            }
+
+           
         }
         &__back::after {
         content: '';
         position: absolute;
-        width: 580px;
-        height: 340px;
-
-        z-index: -1;
-        bottom: -20px;      
-        right: $margPseudo;
         background-color: $blueLight;
+        z-index: -1;
 
         border-top-left-radius: 25em;
         border-bottom-left-radius: 25em;
+
+        width: 310px;
+        height: 190px;
+
+        bottom: -5px;      
+        right: -30px;
+
+        @include desktop {
+            width: 580px;
+            height: 340px;
+
+            bottom: -20px;      
+            right: $margPseudo;
+        }
+
+       
+
+
     }
     }
 
 
-    // &__img {
-    // }
     
 }

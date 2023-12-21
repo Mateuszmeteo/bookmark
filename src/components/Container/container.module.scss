@@ -1,10 +1,13 @@
 
-
+@import './../../Styles/globalVars.module.scss';
 // import globals mixin
 
 .container {
     // background-color: antiquewhite;
-    margin: 0 120px;
-    // width: 100%;
-    // height: 100%;
+    margin: 0 30px;
+    // max-width: 90%;
+    @include desktop {
+        margin: 0 120px;
+
+    }
 }

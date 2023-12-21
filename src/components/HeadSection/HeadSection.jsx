@@ -11,17 +11,17 @@ const HeadSection = () => {
             <Container>
                 <ul className={styles.headSection__list}>
                     <li className={styles.headSection__list__el}>
-                        <ul>
-                            <li><h1>A Simple Bookmark Manager</h1></li>
-                            <li><p>A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. try it for free.</p></li>
-                            <li>
-                                <button>Get it on Chrome</button>
-                                <button>Get it on Firefox</button>
+                        <ul className={styles.headSection__list__el__box}>
+                            <li><h1 className={styles.headSection__list__el__box__title}>A Simple Bookmark Manager</h1></li>
+                            <li><p className={styles.headSection__list__el__box__description}>A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p></li>
+                            <li className={styles.headSection__list__el__box__btns}>
+                                <button className={styles.headSection__list__el__box__btns__btnChrome}>Get it on Chrome</button>
+                                <button className={styles.headSection__list__el__box__btns__btnFirefox}>Get it on Firefox</button>
                             </li>
                         </ul>
                     </li>
                     <li className={styles.headSection__list__back}>
-                        <img className={styles.headSection__img} src={hero} alt="illustration-hero"/>
+                        <img className={styles.headSection__list__back__img} src={hero} alt="illustration-hero"/>
                     </li>
                 </ul>
 

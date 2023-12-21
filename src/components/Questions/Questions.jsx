@@ -19,9 +19,10 @@ const Questions = ( {title, sub}) => {
 
     return (
         <div className={styles.questionsBox}>
-            <div>
-                <h4>{title}</h4>
-                {!description && (<button onClick={openDes}>
+            <div className={styles.questionsBox__title}>
+                <h4 className={styles.questionsBox__title__el}>{title}</h4>
+                {!description && (<button className={styles.questionsBox__title__btn}
+                                 onClick={openDes}>
                                 <ReactSVG
                                 src={iconDown}
                                 beforeInjection={(svg) => {
@@ -30,7 +31,8 @@ const Questions = ( {title, sub}) => {
                                 alt="down"
                                 />
                             </button>)}
-                {description && ( <button onClick={closeDes}>
+                {description && ( <button className={styles.questionsBox__title__btn} 
+                                onClick={closeDes}>
                                 <ReactSVG
                                 src={iconDown}
                                 beforeInjection={(svg) => {
@@ -40,7 +42,7 @@ const Questions = ( {title, sub}) => {
                                 />
                             </button>) }
             </div>
-                {description && (<p>{sub}</p>)}
+                {description && (<p className={styles.questionsBox__subTitle}>{sub}</p>)}
         </div>
     )
 }

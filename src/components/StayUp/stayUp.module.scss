@@ -1,3 +1,172 @@
+@import './../../Styles/globalVars.module.scss';
+
+
+// @keyframes countDown {
+//     from {
+//       content: '35,000+ already joined';
+//     }
+  
+//     to {
+//       content: '0 already joined';
+//     }
+//   }
+
+
+.containerStay {
+    // background-color: blue;
+    display: flex;
+    justify-content: center;
+    // width: 320px;
+}
 .stayUpSection {
-    background-color: chartreuse;
+    background-color: $blueLight;
+    // height: 300px;
+    
+
+    &__box {
+        // background-color: azure;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        width: 320px;
+    
+        color: $white;
+        @include desktop {
+            width: 415px;
+
+        }
+
+        &__paraf {
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 4px;
+            font-weight: 500;
+            // &::before {
+            //     animation: countDown 20s linear;
+            //     content: '35,000+ already joined';
+            //     display: inline-block;
+            // }
+        }
+
+        &__head {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            @include desktop {
+
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        // flex-direction: column;
+        gap: 25px;
+
+        @include desktop {
+
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0;
+        }
+
+        &__input {
+            position: relative;
+            border: none;
+            border-radius: 4px;
+            
+            padding-left: 20px;
+            color: $blueDark;
+
+            width: 300px;
+            height: 40px;
+            
+            @include desktop {
+                width: 260px;
+
+            }
+
+            &::placeholder {
+                // padding-left: 20px;
+                color: $gray;
+                
+            }
+
+            &.error {
+                border: 1px solid $redLight; 
+            }
+            &:focus {
+                border: 1px solid $redLight; 
+            }
+
+        }
+        &__btn {
+            border: 1px solid $redLight;
+            border-radius: 4px;
+            color: $white;
+            background-color: $redLight;
+            
+            height: 40px;
+            width: 320px;
+            @include desktop {
+                width: 110px;
+
+            }
+            &:hover {
+                background-color: $white;
+                color: $redLight;
+            }
+
+        }
+
+        &__err {
+            position: absolute;
+
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            
+            background-color: $redLight;
+            color: $white;
+            // letter-spacing: 0.5px;
+
+            margin-top: 40px;
+            
+
+            height: 20px;
+            width: 300px;
+
+            font-size: 10px;
+
+
+            @include desktop {
+                margin-top: 65px;
+
+                height: 30px;
+                width: 265px;
+                
+                font-size: 12px;
+
+            }
+
+            &::after {
+                content: url('./../../images/icon-error.svg');
+                position: absolute;
+                width: 10px;
+                // background-color: $redLight;
+                right: 25px;
+                bottom: 26px;
+                // z-index: 2;
+                @include desktop {
+                    right: 20px;
+                    bottom: 35px;
+                }
+            }
+            
+        }
+    }
 }

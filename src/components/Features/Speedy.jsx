@@ -7,7 +7,7 @@ const Speedy = () => {
         <div className={styles.outlet}>
             <ul className={styles.outlet__list}>
                 <li className={styles.outlet__list__backSpeedy}>
-                    <img src={logo} />
+                    <img className={styles.outlet__list__logo} src={logo} />
                 </li>
                 <li className={styles.outlet__list__about}>
                     <h2 className={styles.outlet__list__about__title}>Intelligent search</h2>

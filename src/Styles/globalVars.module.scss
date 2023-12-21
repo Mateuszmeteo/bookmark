@@ -4,10 +4,13 @@
 $white: #fff;
 
 $blueLight: hsl(231, 69%, 60%);
+$blueLightShadow: rgba(84, 105, 222, 0.1);
 $redLight: hsl(0, 94%, 66%);
 
 $gray: hsl(229, 8%, 60%);
+$grayWhite: rgba(145, 148, 161, 0.1);
 $blueDark :hsl(229, 31%, 21%);
+$blueDarkBack :rgba(38, 44, 69, 0.95);
 
 
 
@@ -22,6 +25,7 @@ $blueDark :hsl(229, 31%, 21%);
 $mobile: 375px;
 // $mobileMax: 480px;
 // $tablet: 768px;
+$desktopBelow: 1439px;
 $desktop: 1440px;
 
 // @mixin tablet {
@@ -29,6 +33,11 @@ $desktop: 1440px;
 //     @content;
 //   }
 // }
+@mixin desktopBelow {
+  @media screen and (max-width: #{$desktopBelow}) {
+    @content;
+  }
+}
 @mixin desktop {
   @media screen and (min-width: #{$desktop}) {
     @content;
@@ -46,6 +55,7 @@ $rubikFont: 'Rubik', sans-serif;
 /// Margin pseudoElements
 
 $margPseudo: -120px;
+$margPseudoMobile: -30px;
   
  
 
